@@ -1,0 +1,25 @@
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+mvenv/
+.myenv/
+env/
+*.env
+
+# Flask sessions and logs
+instance/
+flask_session/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,19 @@
+/* Remove default body margin and prevent scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A23; /* Match your app's background */
+}
+
+
+
+/* Ensure the navbar and container don't expand beyond the viewport */
+#navbar-container {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove focus outline for better UI */
+*:focus {
+    outline: none !important;
+}
