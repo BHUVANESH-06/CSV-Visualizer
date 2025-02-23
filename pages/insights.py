@@ -4,11 +4,12 @@ import plotly.express as px
 import polars as pl
 from dash import html, dcc, dash_table, Input, Output
 from flask import session, redirect
-
+import os
 # Hard-coded file paths (update these to your actual file locations)
-CSV_PATH_1 = r"C:\Users\bhuva\Downloads\SampleSuperstore.csv"
-CSV_PATH_2 = r"C:\Users\bhuva\Downloads\cereal.csv"
-CSV_PATH_3 = r"C:\Users\bhuva\Downloads\20170308hundehalter.csv"
+CSV_PATH_1 = os.path.abspath("./20170308hundehalter.csv")
+print(CSV_PATH_1)
+CSV_PATH_2 = os.path.abspath("./cereal.csv")
+CSV_PATH_3 = os.path.abspath("./SampleSuperstore.csv")
 
 df1 = pl.read_csv(CSV_PATH_1)
 df2 = pl.read_csv(CSV_PATH_2)
