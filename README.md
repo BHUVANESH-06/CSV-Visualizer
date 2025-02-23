@@ -18,7 +18,10 @@ cd CSV-Visualizer
 
 ### 2️⃣ Install Dependencies
 ```sh
-pip install -r requirements.txt
+uv venv .venv
+.venv\Scripts\activate
+uv pip sync requirements.uv
+uv add pyarrow
 ```
 
 ### 3️⃣ Run the Application
