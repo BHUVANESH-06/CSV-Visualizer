@@ -9,12 +9,13 @@ mvenv/
 .myenv/
 env/
 *.env
-
+*.python-version
 # Flask sessions and logs
 instance/
 flask_session/
 *.log
-
+*pyproject.toml
+*uv.lock
 # System files
 .DS_Store
 Thumbs.db
